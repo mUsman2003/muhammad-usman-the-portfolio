@@ -6,6 +6,45 @@
 
 @layer base {
   :root {
+    --background: 0 0% 97%;
+    --foreground: 0 0% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    --primary: 183 90% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 93%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 84 80% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 87%;
+    --input: 0 0% 90%;
+    --ring: 183 90% 35%;
+
+    --radius: 0.25rem;
+
+    --cyan: 183 90% 35%;
+    --lime: 84 80% 42%;
+
+    --loader-bg: 0 0% 97%;
+    --particle-alpha: 0.3;
+    --particle-line-alpha: 0.08;
+  }
+
+  .dark {
     --background: 0 0% 4%;
     --foreground: 0 0% 94%;
 
@@ -34,10 +73,12 @@
     --input: 0 0% 12%;
     --ring: 183 100% 50%;
 
-    --radius: 0.25rem;
-
     --cyan: 183 100% 50%;
     --lime: 84 100% 68%;
+
+    --loader-bg: 0 0% 0%;
+    --particle-alpha: 0.5;
+    --particle-line-alpha: 0.05;
   }
 }
 
@@ -49,12 +90,14 @@
   html {
     scroll-behavior: smooth;
     cursor: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
   }
 
   a, button, [role="button"] {

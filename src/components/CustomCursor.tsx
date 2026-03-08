@@ -32,24 +32,31 @@ export default function CustomCursor() {
       rafId = requestAnimationFrame(animate);
     };
 
+    const getCyanColor = () => {
+      const v = getComputedStyle(document.documentElement).getPropertyValue('--cyan').trim();
+      return `hsl(${v})`;
+    };
+
     const onMouseEnterHoverable = () => {
+      const cyan = getCyanColor();
       if (ringRef.current) {
         ringRef.current.style.width = '50px';
         ringRef.current.style.height = '50px';
-        ringRef.current.style.borderColor = 'hsl(183, 100%, 50%)';
+        ringRef.current.style.borderColor = cyan;
         ringRef.current.style.opacity = '0.8';
       }
       if (dotRef.current) {
-        dotRef.current.style.backgroundColor = 'hsl(183, 100%, 50%)';
+        dotRef.current.style.backgroundColor = cyan;
         dotRef.current.style.transform += ' scale(1.5)';
       }
     };
 
     const onMouseLeaveHoverable = () => {
+      const cyan = getCyanColor();
       if (ringRef.current) {
         ringRef.current.style.width = '32px';
         ringRef.current.style.height = '32px';
-        ringRef.current.style.borderColor = 'hsl(183, 100%, 50%)';
+        ringRef.current.style.borderColor = cyan;
         ringRef.current.style.opacity = '0.5';
       }
     };

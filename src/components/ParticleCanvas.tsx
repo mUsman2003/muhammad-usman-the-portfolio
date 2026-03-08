@@ -1,5 +1,17 @@
 import { useEffect, useRef } from 'react';
 
+function getCyanHSL() {
+  const style = getComputedStyle(document.documentElement);
+  return style.getPropertyValue('--cyan').trim() || '183 100% 50%';
+}
+
+function getParticleAlphas() {
+  const style = getComputedStyle(document.documentElement);
+  const pa = parseFloat(style.getPropertyValue('--particle-alpha')) || 0.5;
+  const la = parseFloat(style.getPropertyValue('--particle-line-alpha')) || 0.05;
+  return { particleAlpha: pa, lineAlpha: la };
+}
+
 export default function ParticleCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -28,6 +40,9 @@ export default function ParticleCanvas() {
     let rafId: number;
 
     const draw = () => {
+      const cyanHSL = getCyanHSL();
+      const { particleAlpha, lineAlpha } = getParticleAlphas();
+
       ctx.clearRect(0, 0, width, height);
       particles.forEach(p => {
         p.x += p.vx;
@@ -39,11 +54,10 @@ export default function ParticleCanvas() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(183, 100%, 50%, ${p.alpha})`;
+        ctx.fillStyle = `hsla(${cyanHSL}, ${p.alpha * particleAlpha * 2})`;
         ctx.fill();
       });
 
-      // Draw connections
       particles.forEach((p1, i) => {
         particles.slice(i + 1).forEach(p2 => {
           const dx = p1.x - p2.x;
@@ -53,7 +67,7 @@ export default function ParticleCanvas() {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `hsla(183, 100%, 50%, ${0.05 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `hsla(${cyanHSL}, ${lineAlpha * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

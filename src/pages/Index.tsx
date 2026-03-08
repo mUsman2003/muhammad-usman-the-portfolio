@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import IntroLoader from '../components/IntroLoader';
 import CustomCursor from '../components/CustomCursor';
+import ThemeToggle from '../components/ThemeToggle';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -22,6 +23,7 @@ const Index = () => {
   return (
     <>
       <CustomCursor />
+      <ThemeToggle />
       <IntroLoader onComplete={handleLoaderComplete} />
 
       <div

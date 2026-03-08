@@ -60,7 +60,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" ref={ref} className="section-reveal px-6 md:px-12 py-24 md:py-36">
-      <p className="font-display text-[15vw] text-foreground/[0.04] leading-none select-none mb-0 -mb-8">
+      <p className="font-display text-[15vw] text-foreground/[0.08] leading-none select-none mb-0 -mb-8">
         ABOUT
       </p>
 

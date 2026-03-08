@@ -17,24 +17,24 @@ export default function HeroSection() {
         </span>
       </div>
 
-      <div className="relative z-10 px-6 md:px-12 pt-32 pb-8">
-        <p className="text-xs tracking-[0.4em] uppercase text-cyan mb-6">
-          Available for work · 2025
+      <div className="relative z-10 px-6 md:px-12 pt-24 pb-4">
+        <p className="text-xs tracking-[0.4em] uppercase text-cyan mb-4">
+          Available for work · 2026
         </p>
 
-        <h1 className="font-display leading-[0.9] mb-8">
-          <span className="block text-[12vw] md:text-[11vw] text-foreground hover:text-cyan transition-colors duration-500">
+        <h1 className="font-display leading-[0.85] mb-6">
+          <span className="block text-[10vw] md:text-[8vw] text-foreground hover:text-cyan transition-colors duration-500">
             AI ENGINEER.
           </span>
-          <span className="block text-[12vw] md:text-[11vw] text-foreground/80 hover:text-foreground transition-colors duration-500">
+          <span className="block text-[10vw] md:text-[8vw] text-foreground/80 hover:text-foreground transition-colors duration-500">
             BUILDER.
           </span>
-          <span className="block text-[12vw] md:text-[11vw] text-foreground/60 hover:text-foreground transition-colors duration-500">
+          <span className="block text-[10vw] md:text-[8vw] text-foreground/60 hover:text-foreground transition-colors duration-500">
             PROBLEM SOLVER.
           </span>
         </h1>
 
-        <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-12">
+        <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-8">
           CS Student @ FAST NUCES · Islamabad, PK
         </p>
 

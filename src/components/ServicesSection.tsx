@@ -4,21 +4,21 @@ import { Plus } from 'lucide-react';
 const services = [
   {
     number: '01',
-    title: 'AI / ML Engineering',
-    description: 'Custom machine learning pipelines, NLP systems, computer vision, and LLM integrations built for production. From model training to deployment.',
-    tools: ['Python', 'TensorFlow', 'PyTorch', 'YOLOv8', 'Hugging Face', 'FastAPI'],
+    title: 'DevOps & Cloud Engineering',
+    description: 'CI/CD pipelines, Dockerized microservices, Kubernetes orchestration, and AWS infrastructure with full observability. From infrastructure-as-code to production monitoring.',
+    tools: ['Docker', 'Kubernetes', 'Jenkins', 'ArgoCD', 'AWS', 'Grafana', 'Prometheus', 'Terraform', 'GitHub Actions'],
   },
   {
     number: '02',
-    title: 'Full-Stack Development',
-    description: 'End-to-end web applications with React frontends, FastAPI/Express backends, and PostgreSQL databases. Clean code, clean UI.',
-    tools: ['React', 'TypeScript', 'FastAPI', 'Express.js', 'PostgreSQL', 'MongoDB'],
+    title: 'AI / ML / Deep Learning',
+    description: 'Custom machine learning pipelines, NLP systems, computer vision, and LLM integrations built for production. From model training and benchmarking to real-time deployment.',
+    tools: ['Python', 'TensorFlow', 'PyTorch', 'YOLOv8', 'Hugging Face', 'Keras', 'LangChain', 'OpenCV'],
   },
   {
     number: '03',
-    title: 'DevOps & Cloud Engineering',
-    description: 'CI/CD pipelines, Dockerized microservices, Kubernetes orchestration, and AWS infrastructure with full observability.',
-    tools: ['Docker', 'Kubernetes', 'Jenkins', 'ArgoCD', 'AWS', 'Grafana', 'Prometheus'],
+    title: 'Full-Stack Development',
+    description: 'End-to-end web applications with React frontends, FastAPI/Express backends, and PostgreSQL databases. Microservices architecture, event-driven systems, and clean UI.',
+    tools: ['React', 'TypeScript', 'FastAPI', 'Express.js', 'PostgreSQL', 'MongoDB', 'RabbitMQ', 'Docker'],
   },
 ];
 
@@ -38,7 +38,7 @@ export default function ServicesSection() {
   return (
     <section id="services" ref={ref} className="section-reveal px-6 md:px-12 py-24 md:py-36 border-t border-border">
       <div className="flex items-end justify-between mb-16">
-        <p className="font-display text-[10vw] text-foreground/[0.05] leading-none select-none">
+        <p className="font-display text-[10vw] text-foreground/[0.10] leading-none select-none">
           WHAT I DO
         </p>
       </div>

@@ -32,7 +32,7 @@ export default function IntroLoader({ onComplete }: { onComplete: () => void }) 
     <div className="fixed inset-0 z-[9998] pointer-events-none">
       <div
         ref={topRef}
-        className="absolute top-0 left-0 right-0 h-1/2 bg-[#000] flex items-end justify-center pb-4 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
+        className="absolute top-0 left-0 right-0 h-1/2 bg-background flex items-end justify-center pb-4 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
       >
         <div className="flex overflow-hidden">
           {letters.map((letter, i) => (
@@ -52,7 +52,7 @@ export default function IntroLoader({ onComplete }: { onComplete: () => void }) 
       </div>
       <div
         ref={bottomRef}
-        className="absolute bottom-0 left-0 right-0 h-1/2 bg-[#000] flex items-start justify-center pt-4 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
+        className="absolute bottom-0 left-0 right-0 h-1/2 bg-background flex items-start justify-center pt-4 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
       >
         <span
           className="font-display text-lg tracking-[0.5em] text-cyan opacity-0"
