@@ -32,13 +32,13 @@ export default function IntroLoader({ onComplete }: { onComplete: () => void }) 
     <div className="fixed inset-0 z-[9998] pointer-events-none">
       <div
         ref={topRef}
-        className="absolute top-0 left-0 right-0 h-1/2 bg-background flex items-end justify-center pb-4 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
+        className="absolute top-0 left-0 right-0 h-1/2 bg-background flex items-end justify-center pb-6 md:pb-8 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
       >
-        <div className="flex overflow-hidden">
+        <div className="flex overflow-hidden justify-center px-4">
           {letters.map((letter, i) => (
             <span
               key={i}
-              className="font-display text-5xl md:text-8xl tracking-widest text-foreground inline-block"
+              className="font-display text-3xl md:text-7xl tracking-[0.25em] md:tracking-[0.4em] text-foreground inline-block"
               style={{
                 animation: `letter-in 0.5s cubic-bezier(0.22,1,0.36,1) ${i * 0.04}s forwards`,
                 opacity: 0,
@@ -52,10 +52,10 @@ export default function IntroLoader({ onComplete }: { onComplete: () => void }) 
       </div>
       <div
         ref={bottomRef}
-        className="absolute bottom-0 left-0 right-0 h-1/2 bg-background flex items-start justify-center pt-4 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
+        className="absolute bottom-0 left-0 right-0 h-1/2 bg-background flex items-start justify-center pt-4 md:pt-6 transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)]"
       >
         <span
-          className="font-display text-lg tracking-[0.5em] text-cyan opacity-0"
+          className="font-display text-sm md:text-lg tracking-[0.35em] md:tracking-[0.5em] text-cyan opacity-0"
           style={{ animation: 'letter-in 0.6s ease 0.8s forwards' }}
         >
           PORTFOLIO
