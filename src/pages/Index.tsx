@@ -1,13 +1,11 @@
 import { useState, useCallback } from 'react';
 import IntroLoader from '../components/IntroLoader';
 import CustomCursor from '../components/CustomCursor';
-import ThemeToggle from '../components/ThemeToggle';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ProjectsSection from '../components/ProjectsSection';
-import SkillsStrip from '../components/SkillsStrip';
 import CertificationsSection from '../components/CertificationsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -23,7 +21,6 @@ const Index = () => {
   return (
     <>
       <CustomCursor />
-      <ThemeToggle />
       <IntroLoader onComplete={handleLoaderComplete} />
 
       <div
@@ -36,7 +33,6 @@ const Index = () => {
           <AboutSection />
           <ServicesSection />
           <ProjectsSection />
-          <SkillsStrip />
           <CertificationsSection />
           <ContactSection />
         </main>

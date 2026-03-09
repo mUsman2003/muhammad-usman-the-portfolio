@@ -41,7 +41,7 @@ export default function ParticleCanvas() {
 
     const draw = () => {
       const cyanHSL = getCyanHSL();
-      const { particleAlpha, lineAlpha } = getParticleAlphas();
+      const { particleAlpha } = getParticleAlphas();
 
       ctx.clearRect(0, 0, width, height);
       particles.forEach(p => {
@@ -56,22 +56,6 @@ export default function ParticleCanvas() {
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fillStyle = `hsla(${cyanHSL}, ${p.alpha * particleAlpha * 2})`;
         ctx.fill();
-      });
-
-      particles.forEach((p1, i) => {
-        particles.slice(i + 1).forEach(p2 => {
-          const dx = p1.x - p2.x;
-          const dy = p1.y - p2.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 120) {
-            ctx.beginPath();
-            ctx.moveTo(p1.x, p1.y);
-            ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = `hsla(${cyanHSL}, ${lineAlpha * (1 - dist / 120)})`;
-            ctx.lineWidth = 0.5;
-            ctx.stroke();
-          }
-        });
       });
 
       rafId = requestAnimationFrame(draw);

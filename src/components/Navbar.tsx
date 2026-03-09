@@ -82,7 +82,7 @@ export default function Navbar() {
           ))}
         </ul>
         <p className="absolute bottom-8 text-muted-foreground text-sm tracking-widest">
-          MUHAMMAD USMAN — 2025
+          MUHAMMAD USMAN — 2026
         </p>
       </div>
     </>

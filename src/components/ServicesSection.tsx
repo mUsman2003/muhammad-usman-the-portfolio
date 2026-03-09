@@ -38,7 +38,7 @@ export default function ServicesSection() {
   return (
     <section id="services" ref={ref} className="section-reveal px-6 md:px-12 py-24 md:py-36 border-t border-border">
       <div className="flex items-end justify-between mb-16">
-        <p className="font-display text-[10vw] text-foreground/[0.10] leading-none select-none">
+        <p className="font-display text-[10vw] text-foreground/[0.18] leading-none select-none">
           WHAT I DO
         </p>
       </div>

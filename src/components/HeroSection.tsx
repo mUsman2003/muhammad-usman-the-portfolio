@@ -7,7 +7,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
       <ParticleCanvas />
 
       {/* Background text */}
@@ -17,7 +17,7 @@ export default function HeroSection() {
         </span>
       </div>
 
-      <div className="relative z-10 px-6 md:px-12 pt-24 pb-4">
+      <div className="relative z-10 px-6 md:px-12 pt-20 pb-4">
         <p className="text-xs tracking-[0.4em] uppercase text-cyan mb-4">
           Available for work · 2026
         </p>

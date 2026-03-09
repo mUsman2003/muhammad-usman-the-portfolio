@@ -138,7 +138,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" ref={ref} className="section-reveal px-6 md:px-12 py-24 md:py-36 border-t border-border">
-      <p className="font-display text-[10vw] text-foreground/[0.10] leading-none select-none mb-12">
+      <p className="font-display text-[10vw] text-foreground/[0.18] leading-none select-none mb-12">
         SELECTED WORK
       </p>
 

@@ -27,12 +27,6 @@ function MarqueeRow({ items, reverse }: { items: string[]; reverse?: boolean }) 
 export default function SkillsStrip() {
   return (
     <section className="py-16 border-t border-border">
-      <div className="px-6 md:px-12 mb-8">
-        <p className="text-xs tracking-[0.4em] uppercase text-muted-foreground">
-          <span className="text-cyan mr-4">●</span>AI / ML Stack
-          <span className="ml-8 text-lime mr-4">●</span>DevOps / Cloud Stack
-        </p>
-      </div>
       <MarqueeRow items={aiRow} />
       <MarqueeRow items={devopsRow} reverse />
     </section>

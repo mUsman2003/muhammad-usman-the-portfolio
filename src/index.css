@@ -43,43 +43,6 @@
     --particle-alpha: 0.3;
     --particle-line-alpha: 0.08;
   }
-
-  .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 94%;
-
-    --card: 0 0% 6%;
-    --card-foreground: 0 0% 94%;
-
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 94%;
-
-    --primary: 183 100% 50%;
-    --primary-foreground: 0 0% 4%;
-
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 94%;
-
-    --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 53%;
-
-    --accent: 84 100% 68%;
-    --accent-foreground: 0 0% 4%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 94%;
-
-    --border: 0 0% 15%;
-    --input: 0 0% 12%;
-    --ring: 183 100% 50%;
-
-    --cyan: 183 100% 50%;
-    --lime: 84 100% 68%;
-
-    --loader-bg: 0 0% 0%;
-    --particle-alpha: 0.5;
-    --particle-line-alpha: 0.05;
-  }
 }
 
 @layer base {

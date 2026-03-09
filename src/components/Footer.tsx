@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="relative border-t border-border px-6 md:px-12 py-10 overflow-hidden grain-overlay">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <p className="text-sm text-muted-foreground">
-          © 2025 Muhammad Usman
+          © 2026 Muhammad Usman
         </p>
         <p className="text-sm text-muted-foreground text-center">
           FAST NUCES · Islamabad, PK
