@@ -23,11 +23,11 @@ export default function Marquee() {
             key={`${icon.name}-${i}`}
             className="inline-flex items-center mx-8 text-sm tracking-widest uppercase text-muted-foreground font-medium"
           >
-            <span className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-cyan/40 bg-background shadow-sm overflow-hidden">
+            <span className="mr-3 flex h-7 w-7 items-center justify-center rounded-full border border-cyan/40 bg-background shadow-sm overflow-hidden">
               <img
                 src={icon.src}
                 alt={icon.name}
-                className="h-6 w-6 object-contain"
+                className="h-5 w-5 object-contain"
                 loading="lazy"
               />
             </span>

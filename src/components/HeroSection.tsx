@@ -23,13 +23,13 @@ export default function HeroSection() {
         </p>
 
         <h1 className="font-display leading-[0.85] mb-6">
-          <span className="block text-[10vw] md:text-[8vw] text-foreground hover:text-cyan transition-colors duration-500">
+          <span className="block text-[11vw] md:text-[7vw] text-foreground hover:text-cyan transition-colors duration-500">
             AI ENGINEER.
           </span>
-          <span className="block text-[10vw] md:text-[8vw] text-foreground/80 hover:text-foreground transition-colors duration-500">
+          <span className="block text-[11vw] md:text-[7vw] text-foreground/80 hover:text-foreground transition-colors duration-500">
             BUILDER.
           </span>
-          <span className="block text-[10vw] md:text-[8vw] text-foreground/60 hover:text-foreground transition-colors duration-500">
+          <span className="block text-[11vw] md:text-[7vw] text-foreground/60 hover:text-foreground transition-colors duration-500">
             PROBLEM SOLVER.
           </span>
         </h1>
